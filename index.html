@@ -155,19 +155,19 @@
                     <div id="membros" class="row justify-content-center my-5">
                         <h2 class="space-grotesk fw-bold">Membros</h2>
                         <div class="col-12 col-md-3 position-relative mb-3 mb-md-0 cursor">
-                            <img src="../assets/img/membros/noah.jpg" alt="Noah Sebastian" class="img-fluid h-100 w-100" id="noah" onmouseover="toggleNoah()" onmouseout="toggleNoah()">
+                            <img src="../assets/img/membros/noah.jpg" alt="Noah Sebastian" class="img-fluid h-100 w-100" id="noah" onmouseover="toggle('noah')" onmouseout="toggle('noah')" onclick="toggle('noah','click')">
                             <p id="texto-noah" class="space-grotesk fw-bold text-warning texto-membros px-3">Noah Sebastian</p>
                         </div>
                         <div class="col-12 col-md-3 position-relative mb-3 mb-md-0 cursor">
-                            <img src="../assets/img/membros/nick.jpg" alt="Nicholas Ruffilo" class="img-fluid h-100 w-100" id="nick" onmouseover="toggleNick()" onmouseout="toggleNick()">
+                            <img src="../assets/img/membros/nick.jpg" alt="Nicholas Ruffilo" class="img-fluid h-100 w-100" id="nick" onmouseover="toggle('nick')" onmouseout="toggle('nick')" onclick="toggle('nick','click')">
                             <p id="texto-nick" class="space-grotesk fw-bold text-warning texto-membros px-3">Nicholas Ruffilo</p>
                         </div>
                         <div class="col-12 col-md-3 position-relative mb-3 mb-md-0 cursor">
-                            <img src="../assets/img/membros/jolly.jpg" alt='Joakim "Jolly" Karlsson' class="img-fluid h-100 w-100" id="jolly" onmouseover="toggleJolly()" onmouseout="toggleJolly()">
+                            <img src="../assets/img/membros/jolly.jpg" alt='Joakim "Jolly" Karlsson' class="img-fluid h-100 w-100" id="jolly" onmouseover="toggle('jolly')" onmouseout="toggle('jolly')" onclick="toggle('jolly','click')">
                             <p id="texto-jolly" class="space-grotesk fw-bold text-warning texto-membros px-3">Joakim "Jolly" Karlsson</p>
                         </div>
                         <div class="col-12 col-md-3 position-relative mb-3 mb-md-0 cursor">
-                            <img src="../assets/img/membros/folio.jpg" alt="Nick Folio" class="img-fluid h-100 w-100" id="folio" onmouseover="toggleFolio()" onmouseout="toggleFolio()">
+                            <img src="../assets/img/membros/folio.jpg" alt="Nick Folio" class="img-fluid h-100 w-100" id="folio" onmouseover="toggle('folio')" onmouseout="toggle('folio')" onclick="toggle('folio','click')">
                             <p id="texto-folio" class="space-grotesk fw-bold text-warning texto-membros px-3">Nick Folio</p>
                         </div>
                     </div>
@@ -175,26 +175,26 @@
                     <div id="discografia" class="row justify-content-center">
                         <h2 class="space-grotesk fw-bold">Discografia</h2>
                         <div class="col-12 col-md-4 position-relative mb-3 mb-md-0 cursor">
-                            <img src="../assets/img/albums/bad-omens.jpg" alt="Bad Omens" class="img-fluid h-100 w-100" id="bad-omens" onmouseover="toggleBadOmens()" onmouseout="toggleBadOmens()">
-                            <p id="texto-bad-omens" class="space-grotesk fw-bolder text-warning texto-albuns px-2">Bad Omens</p>
+                            <img src="../assets/img/albums/bad-omens.jpg" alt="Bad Omens" class="img-fluid h-100 w-100" id="bad-omens" onmouseover="toggle('bad-omens')" onmouseout="toggle('bad-omens')" onclick="toggle('bad-omens','click')">
+                            <p id="texto-bad-omens" class="space-grotesk fw-bolder text-warning texto-albuns">Bad Omens</p>
                         </div>
                         <div class="col-12 col-md-4 position-relative mb-3 mb-md-0 cursor border">
-                            <img src="../assets/img/albums/fgbgfm.jpg" alt="Finding God Before God Finds Me" class="img-fluid h-100 w-100" id="fgbgfm" onmouseover="toggleFGBGFM()" onmouseout="toggleFGBGFM()">
-                            <p id="texto-fgbgfm" class="space-grotesk fw-bolder text-warning texto-albuns px-2">Finding God Before God Finds Me</p>
+                            <img src="../assets/img/albums/fgbgfm.jpg" alt="Finding God Before God Finds Me" class="img-fluid h-100 w-100" id="fgbgfm" onmouseover="toggle('fgbgfm')" onmouseout="toggle('fgbgfm')" onclick="toggle('fgbgfm','click')">
+                            <p id="texto-fgbgfm" class="space-grotesk fw-bolder text-warning texto-albuns">Finding God Before God Finds Me</p>
                         </div>
                         <div class="col-12 col-md-4 position-relative mb-3 mb-md-0 cursor">
-                            <img src="../assets/img/albums/tdopom.jpg" alt="Bad Omens" class="img-fluid h-100 w-100" id="tdopom" onmouseover="toggleTDOPOM()" onmouseout="toggleTDOPOM()">
-                            <p id="texto-tdopom" class="space-grotesk fw-bolder text-warning texto-albuns px-2">THE DEATH OF PEACE OF MIND</p>
+                            <img src="../assets/img/albums/tdopom.jpg" alt="Bad Omens" class="img-fluid h-100 w-100" id="tdopom" onmouseover="toggle('tdopom')" onmouseout="toggle('tdopom')" onclick="toggle('tdopom','click')">
+                            <p id="texto-tdopom" class="space-grotesk fw-bolder text-warning texto-albuns">THE DEATH OF PEACE OF MIND</p>
                         </div>
                     </div>
                 </main>
 
                 <!-- OUTRAS INFORMAÇÕES -->
-                <aside id="outros" class="mb-5 offset-md-1 col-3">
+                <aside id="outros" class="mb-5 offset-md-1 col-12 col-md-3">
                     <div id="datas" class="bg-warning">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <i class="bi bi-calendar3"></i>
-                            <h1>Datas</h1>
+                        <div class="row justify-content-center align-items-center" style="font-size: 32px; line-height: 1.22;">
+                            <i class="bi bi-calendar3 col-3 pb-2"></i>
+                            <span class="space-grotesk col-7">Datas</span>
                         </div>
                     </div>
                 </aside>
