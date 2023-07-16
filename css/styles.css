@@ -154,3 +154,7 @@ footer{
     font-size: 18px;
     display: none;
 }
+
+.cursor:hover {
+    cursor: pointer;
+}
