@@ -38,3 +38,10 @@ toggle = (name,event=null) => {
     }
 
 }
+
+
+// impedir mudança na url
+scroll = (id) => {
+    const access = document.getElementById(id);
+    access.scrollIntoView({behavior: 'smooth'}, true);
+    }

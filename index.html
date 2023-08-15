@@ -56,19 +56,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">
+                        <a class="nav-link" aria-current="page" href="javascript: scroll('links')">
                         <span class="space-grotesk fw-bold text-warning">Home</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="navbarScrollingDropdown" role="button" href="#banda">
+                        <a class="nav-link" role="button" href="javascript: scroll('banda')">
                             <span class="space-grotesk fw-bold text-warning">
                                 Banda
                             </span>
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="space-grotesk fw-bold">
                                 Música
                             </span>
@@ -92,14 +92,14 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="javascript: scroll('links')">
                             <span class="space-grotesk fw-bold text-warning">
                                 No Brasil
                             </span>
                         </a>
                     </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-warning" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <span class="space-grotesk fw-bold">
                             Redes Sociais
                         </span>
@@ -138,20 +138,22 @@
             </div>
         </nav>
 
-        <div class="container mt-5">
+        <div class="container">
             <!-- DIVISÃO PRINCIPAL -->
             <div class="row">
                 <!-- SOBRE A BANDA -->
-                <main id="banda" class="mb-5 col-12 col-md-8">
+                <main id="banda" class="col-12 col-md-7 col-bg-8">
                     <div id="sobre" class="row">
-                    <h2 class="space-grotesk fw-bold">Sobre a banda</h2>
-                    <p class="space-grotesk">
-                        Bad Omens é uma banda de rock americana de Richmond, Virgínia,
-                        formada em 2015 pelo vocalista, frontman e produtor Noah Sebastian,
-                        o guitarrista Nicholas Ruffilo e o baixista Vincent Riquier.
-                    </p>
+                        <!-- <h2 class="space-grotesk fw-bold">Sobre a banda</h2> -->
+                        <img src="./assets/img/banda.png" alt="Banda" class="img-fluid">
+                        <p class="space-grotesk mt-3">
+                            Bad Omens é uma banda de rock americana de Richmond, Virgínia,
+                            formada em 2015 pelo vocalista, frontman e produtor Noah Sebastian,
+                            o guitarrista Nicholas Ruffilo e o baixista Vincent Riquier.
+                        </p>
                     </div>
 
+                    <!-- MEMBROS -->
                     <div id="membros" class="row justify-content-center my-5">
                         <h2 class="space-grotesk fw-bold text-center text-md-start titulo">Membros</h2>
                         <div class="col-6 col-md-3 position-relative mb-3 mb-md-0 cursor">
@@ -172,7 +174,8 @@
                         </div>
                     </div>
 
-                    <div id="discografia" class="row justify-content-center">
+                    <!-- DISCOGRAFIA -->
+                    <div id="discografia" class="row justify-content-center mb-3">
                         <h2 class="space-grotesk fw-bold titulo">Discografia</h2>
                         <div class="col-12 col-md-4 position-relative mb-3 mb-md-0 cursor">
                             <img src="../assets/img/albums/bad-omens.jpg" alt="Bad Omens" class="img-fluid h-100 w-100" id="bad-omens" onmouseover="toggle('bad-omens')" onmouseout="toggle('bad-omens')" onclick="toggle('bad-omens','click')">
@@ -187,87 +190,429 @@
                             <p id="texto-tdopom" class="space-grotesk fw-bolder text-warning texto-albuns">THE DEATH OF PEACE OF MIND</p>
                         </div>
                     </div>
+
+                    <!-- PLAYLISTS -->
+                    <div id="playlist1" class="row justify-content-center mt-5">
+                        <div class="col-12 col-md-6">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO2fvl3Z?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1E4xYF5ZH2Gp4O?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                    </div>
+
                 </main>
 
                 <!-- OUTRAS INFORMAÇÕES -->
-                <aside id="outros" class="mb-5 offset-md-1 col-12 col-md-3">
+                <aside id="outros" class="mb-5 offset-md-1 col-12 col-md-4 col-bg-3">
                     <div id="datas" class="row justify-content-center">
                         <div id="agenda-header" class="col-10 col-md-12 d-flex justify-content-around align-items-center texto-icone px-2 py-3">
                             <i class="bi bi-calendar3 col-3 text-light"></i>
-                            <span class="space-grotesk fw-bold col-7 ms-2 text-end">AGENDA</span>
+                            <span class="space-grotesk fw-bold col-7 ms-2 text-end text-warning">AGENDA</span>
                         </div>
                         <div id="agenda-body" class="col-10 col-md-12 border border-dark border-top-0">
                             <ol class="list-group">
-                                <li class="list-group-item d-flex justify-content-between align-items-center border-bottom border-bottom">
-                                    <div class="ms-2 me-auto">
-                                        <div class="fw-bold">Houston, TX</div>
-                                        Bayou Music Center
-                                    </div>
-                                    <span class="badge bg-warning rounded-pill">01.09</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
-                                    <div class="ms-2 me-auto">
-                                        <div class="fw-bold">Austin, TX</div>
-                                        Stubb's Waller Creek Amphitheater
-                                    </div>
-                                    <span class="badge bg-warning rounded-pill">02.09</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
-                                    <div class="ms-2 me-auto">
-                                        <div class="fw-bold">New Orleans, LA</div>
-                                        Orpheum Theater
-                                    </div>
-                                    <span class="badge bg-warning rounded-pill">04.09</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
-                                    <div class="ms-2 me-auto">
-                                        <div class="fw-bold">St Petersburg, FL</div>
-                                        Jannus Live
-                                    </div>
-                                    <span class="badge bg-warning rounded-pill">05.09</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
-                                    <div class="ms-2 me-auto">
-                                        <div class="fw-bold">Lake Buena Vista, FL</div>
-                                        House of Blues Orlando
-                                    </div>
-                                    <span class="badge bg-warning rounded-pill">06.09</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
-                                    <div class="ms-2 me-auto">
-                                        <div class="fw-bold">Atlanta, GA</div>
-                                        Coca-Cola Roxy
-                                    </div>
-                                    <span class="badge bg-warning rounded-pill">08.09</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
-                                    <div class="ms-2 me-auto">
-                                        <div class="fw-bold">Nashville, TN</div>
-                                        Marathon Music Works
-                                    </div>
-                                    <span class="badge bg-warning rounded-pill">09.09</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
-                                    <div class="ms-2 me-auto">
-                                        <div class="fw-bold">Alton, VA</div>
-                                        Blue Ridge Rock Festival 2023
-                                    </div>
-                                    <span class="badge bg-warning rounded-pill">10.09</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
-                                    <div class="ms-2 me-auto">
-                                        <div class="fw-bold">New York, NY</div>
-                                        Terminal 5
-                                    </div>
-                                    <span class="badge bg-warning rounded-pill">01.09</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
-                                    <div class="ms-2 me-auto">
-                                        <div class="fw-bold">Philadelphia, PA</div>
-                                        Franklin Music Hall
-                                    </div>
-                                    <span class="badge bg-warning rounded-pill">01.09</span>
-                                </li>
+                                <div id="tour1">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Houston, TX</div>
+                                            <span>Bayou Music Center</span>
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">01.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Austin, TX</div>
+                                            Stubb's Waller Creek Amphitheater
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">02.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">New Orleans, LA</div>
+                                            Orpheum Theater
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">04.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">St Petersburg, FL</div>
+                                            Jannus Live
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">05.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Lake Buena Vista, FL</div>
+                                            House of Blues Orlando
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">06.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Atlanta, GA</div>
+                                            Coca-Cola Roxy
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">08.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Nashville, TN</div>
+                                            Marathon Music Works
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">09.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Alton, VA</div>
+                                            Blue Ridge Rock Festival 2023
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">10.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">New York, NY</div>
+                                            Terminal 5
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">12.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Philadelphia, PA</div>
+                                            Franklin Music Hall
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">13.09</span>
+                                    </li>
+                                </div>
+                                <div id="tour2">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Pittsburgh, PA</div>
+                                            Stage AE
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">14.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Silver Spring, MD</div>
+                                            The Fillmore
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">15.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Boston, MA</div>
+                                            Roadrunner
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">16.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Montreal, QC</div>
+                                            MTELUS
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">18.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Toronto, ON</div>
+                                            REBEL
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">19.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Chicago, IL</div>
+                                            The Salt Shed
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">21.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Louisville, KY</div>
+                                            Louder Than Life 2023
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">22.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Clarkston, MI</div>
+                                            WRIF Riff Fest 2023
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">23.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Columbus, OH</div>
+                                            KEMBA Live!
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">24.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Milwaukee, WI</div>
+                                            The Rave / Eagles Club
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">26.09</span>
+                                    </li>
+
+                                </div>
+                                <div id="tour3">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Maplewood, MN</div>
+                                            Myth Live
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">27.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Denver, CO</div>
+                                            Fillmore Auditorium
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">29.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Salt Lake City, UT</div>
+                                            The Union Event Center
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">30.09</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Portland, OR</div>
+                                            McMenamins Crystal Ballroom
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">02.10</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Vancouver, BC</div>
+                                            Vogue Theatre
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">03.10</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Seattle, WA</div>
+                                            Showbox SoDo
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">04.10</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Sacramento, CA</div>
+                                            Aftershock 2023
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">06.10</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Los Angeles, CA</div>
+                                            Hollywood Palladium
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">08.10</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Las Vegas, NV</div>
+                                            The Theater at Virgin Hotels Las Vegas
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">09.10</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Tempe, AZ</div>
+                                            Marquee Theatre
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">10.10</span>
+                                    </li>
+
+                                </div>
+                                <div id="tour4">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Albuquerque, NM</div>
+                                            Revel Entertainment Center
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">11.10</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Dallas, TX</div>
+                                            The Factory In Deep Ellum
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">13.10</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Cardiff, United Kingdom</div>
+                                            Cardiff International Arena
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">09.01</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Bournemouth, United Kingdom</div>
+                                            Bournemouth International Centre
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">10.01</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Birmingham, United Kingdom</div>
+                                            Utilita Arena Birmingham
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">12.01</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Manchester, United Kingdom</div>
+                                            AO Arena
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">13.01</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Glasgow, United Kingdom</div>
+                                            OVO Hydro
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">14.01</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Newcastle Upon Tyne, United Kingdom</div>
+                                            Utilita Arena Newcastle
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">16.01</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Liverpool, United Kingdom</div>
+                                            M&S Bank Arena Liverpool
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">17.01</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Sheffield, United Kingdom</div>
+                                            Utilita Arena Sheffield
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">19.01</span>
+                                    </li>
+
+                                </div>
+                                <div id="tour5">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">London, United Kingdom</div>
+                                            The O2
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">20.01</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">London, United Kingdom</div>
+                                            The O2
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">21.01</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Dublin, Ireland</div>
+                                            3Arena
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">23.01</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Berlin, Germany</div>
+                                            Columbiahalle
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">27.01</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Cologne, Germany</div>
+                                            Palladium Cologne
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">28.01</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Cologne, Germany</div>
+                                            Palladium Cologne
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">29.01</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Munich, Germany</div>
+                                            Zenith
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">30.01</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Zürich, Switzerland</div>
+                                            Halle 622
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">01.02</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Offenbach Am Main, Germany</div>
+                                            Stadthalle Offenbach
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">02.02</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Tilburg, Netherlands</div>
+                                            Poppodium 013
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">04.02</span>
+                                    </li>
+
+                                </div>
+                                <div id="tour6">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Brussels, Belgium</div>
+                                            Ancienne Belgique
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">05.02</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Paris, France</div>
+                                            Salle Pleyel
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">06.02</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Dresden, Germany</div>
+                                            Messe Dresden
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">08.02</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Praha, Czech Republic</div>
+                                            SaSaZu
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">09.02</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        <div>
+                                            <div class="fw-bold">Milan, Italy</div>
+                                            Alcatraz
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">11.02</span>
+                                    </li>  
+                                </div>                  
                             </ol>
                         </div>
                     </div>

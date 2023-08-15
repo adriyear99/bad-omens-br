@@ -7,7 +7,6 @@
     font-family: "Literata", serif;
 }
 
-/* MENU PRINCIPAL */
 .menu-container {
     max-width: 100%;
     margin: 0 auto;
@@ -40,6 +39,18 @@
 
 .logo-banda {
     width: 75%;
+}
+
+.nav-link span:hover {
+    color: white !important;
+}
+
+.nav-item a span:hover {
+    color: white !important;
+}
+
+.nav-item .dropdown-toggle:hover {
+    color: white !important;
 }
 
 @media (min-width: 768px) {
@@ -170,7 +181,5 @@ footer{
 .texto-icone {
     font-size: 24px; 
     line-height: 1.5; 
-    /* background-color: #e80405; */
-    /* background-color: #db5344; */
     background-color: #943126;
 }
