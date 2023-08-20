@@ -42,6 +42,35 @@ toggle = (name,event=null) => {
 
 // impedir mudança na url
 scroll = (id) => {
-    const access = document.getElementById(id);
-    access.scrollIntoView({behavior: 'smooth'}, true);
+    const access = document.getElementById(id)
+    access.scrollIntoView({behavior: 'smooth'}, true)
+}
+
+// ocultar botão de voltar e avançar na primeira e última página
+hideArrowFirst = () => {
+    const segundoGrupo = document.getElementById('tour2')
+    const ultimoGrupo = document.getElementById('tour6')
+
+    if(segundoGrupo.classList.contains('active')){
+        document.getElementById('button-previous').style.display = 'none'
+        document.getElementById('button-next').style.display = 'flex'
     }
+
+    if(ultimoGrupo.classList.contains('active')){
+        document.getElementById('button-next').style.display = 'flex'
+    }
+}
+
+hideArrowLast = () => {
+    const primeiroGrupo = document.getElementById('tour1')
+    const penultimoGrupo = document.getElementById('tour5')
+
+    if(primeiroGrupo.classList.contains('active')){
+        document.getElementById('button-previous').style.display = 'flex'
+        document.getElementById('button-next').style.display = 'flex'
+    }
+
+    if(penultimoGrupo.classList.contains('active')){
+        document.getElementById('button-next').style.display = 'none'
+    }
+}
