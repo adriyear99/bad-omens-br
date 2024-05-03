@@ -184,6 +184,19 @@ footer{
     background-color: #943126;
 }
 
+.scarlet {
+    background-color: #943126;
+    color: #fff;
+}
+
+.modal-header {
+    border-bottom: none !important;
+}
+
+.modal-footer {
+    border-top: none !important;
+}
+
 /* DATAS DA TURNÊ */
 .vertical.carousel .carousel-item {
     overflow: hidden;
